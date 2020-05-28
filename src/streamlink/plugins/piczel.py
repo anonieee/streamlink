@@ -29,8 +29,6 @@ class Piczel(Plugin):
 
     def _get_streams(self):
         match = _url_re.match(self.url)
-        if not match:
-            return
 
         channel_name = match.group(1)
 
